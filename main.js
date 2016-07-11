@@ -55,8 +55,8 @@ function userGuess() {
 				console.log("The word was " + currentWord + "!");
 				playAgain();
 			} else if(turns == 0){
-				console.log("Opps! You ran out of turns!");
-				console.log("The word was " + currentWord + "!");
+				console.log("You ran out of turns!");
+				console.log("Game over bro it was " + currentWord);
 				playAgain();
 			} else {
 				userGuess();
