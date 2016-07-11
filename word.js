@@ -1,51 +1,43 @@
 var game = require('./game.js');
-var Word = function(wrd){
-	game.game.wordBank
-	// this.wordList = ["crow","khaleesi","maester","meereenese knot","milk of the poppy","pyromancer","raven","red wedding","second sons","the seven","unsullied","valyrian","the wall","warg","white walkers","wildfire","wilding"];
-}
+var wordBank = game.game.wordBank;
+// //import Letter above with requiring the letter.js file
 
-var functionForWrds = new Words();
+// var Word = function(wrd){
+// 	//set a property called word and set it equal to what you think it should be
+// 	var words = new game.game.wordBank;
+// 	//set a property called lets to an empty array. We will eventually push letter objects in here
+// 	var lets = [];
+// 	//set a property called found to false
+// 	var found = false;
+// 	//make a property called getLets, set it to a function and inside the function loop over the word property and push letter objects into the lets property.
+// 	var getlets = function(){
+// 		for (var i = 0; i < this.words.length; i++) {
+// 			letterz = this.words.split("");
+// 			this.lets = this.lets.concat(letterz);
+// 		}
+// 	}
+// 	//returns ture or false whether we found the current word or not
+// 	this.didWeFindTheWord = function() {
+// 		//set the found property to true or false based on whether all the letters have been found or not
 
+// 		//return the found property
+// 	};
 
-exports.word = {
-	wordFunctions: wordFunctions
-}
+// 	this.checkIfLetterFound = function(guessLetter) {
+// 		//set a variable whatToReturn to 0
 
+// 		//loop over the lets property and if the letter object's charac property equals the guessletter then set the appear property of the letter object to be true. Also increment whatToReturn.
 
+// 		//return whatToReturn
+// 	};
 
-//import Letter above with requiring the letter.js file
+// 	this.wordRender = function() {
+// 		//make a variable named str and set it to empty quotes
 
-var Word = function(wrd){
-	//set a property called word and set it equal to what you think it should be
-	var words = game.game.wordBank
-	//set a property called lets to an empty array. We will eventually push letter objects in here
+// 		//loop over this.lets and call the letterRender property of the letter object that you're looping over, and add it to str
 
-	//set a property called found to false
+// 		//return str
+// 	};
+// }
 
-	//make a property called getLets, set it to a function and inside the function loop over the word property and push letter objects into the lets property.
-
-	//returns ture or false whether we found the current word or not
-	this.didWeFindTheWord = function() {
-		//set the found property to true or false based on whether all the letters have been found or not
-
-		//return the found property
-	};
-
-	this.checkIfLetterFound = function(guessLetter) {
-		//set a variable whatToReturn to 0
-
-		//loop over the lets property and if the letter object's charac property equals the guessletter then set the appear property of the letter object to be true. Also increment whatToReturn.
-
-		//return whatToReturn
-	};
-
-	this.wordRender = function() {
-		//make a variable named str and set it to empty quotes
-
-		//loop over this.lets and call the letterRender property of the letter object that you're looping over, and add it to str
-
-		//return str
-	};
-}
-
-//export the Word constructor here at the end
+// //export the Word constructor here at the end
